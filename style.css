@@ -2,17 +2,21 @@ body, html{
     height: 100%;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight:900;
     line-height: 1.8em;
     color: #666;
 }
-.first-image{
-    background-image: url("Images/Image1.jpg");
-    min-height: 100%;
+.first-image, .second-image, .third-image{
     position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.first-image{
+    background-image: url("Images/Image1.jpg");
+    min-height: 700px;
 }
 .ptext{
     position: absolute;
@@ -22,6 +26,7 @@ body, html{
     color: #000;
     font-size: 27px;
     letter-spacing: 8px;
+    text-transform: uppercase;
 }
 .ptext .border{
     background-color: #111;
@@ -29,10 +34,13 @@ body, html{
     padding: 20px;
 }
 
-.article1{
+.article{
+    text-align: center;
+    padding: 50px 80px;
+}
+.article-light{
     background-color: #f4f4f4;
     color: #666;
-    text-align: center;
 }
 h2{
     font-size: 1.5em;
@@ -42,48 +50,48 @@ h2{
     margin-inline-end: 0px;
     font-weight: bold;
 }
+p{
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 .second-image{
     background-image: url("Images/Image2.jpg");
     min-height: 400px;
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
 }
-.ptext .border-trans{
+
+.ptext .border .trans{
     background-color: transparent;
+}
+.ptext .border{
+    background-color: #111;
     color: #fff;
     padding: 20px;
 }
-.article2{
+#image-two-text{
+    background: none;
+}
+#article-dark1{
     background-color: #282e34;
     color: #ddd;
-    text-align: center;
-    padding: 50px 80px;
+    
 }
 .third-image{
     background-image: url("Images/Image3.jpg");
     min-height: 400px;
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
 }
-.article3{
+#image-three-text{
+    background: none;
+}
+#article-dark2{
     background-color: #282e34;
     color: #ddd;
-    text-align: center;
-    padding: 50px 80px;
+    
 }
 
-.last-image{
-    background-image: url("Images/Image1.jpg");
-    min-height: 100%;
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-}
+
+
 
 @media only screen and (max-width: 568px){
     .first-image, .second-image, .third-image{
