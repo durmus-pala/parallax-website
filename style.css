@@ -1,6 +1,7 @@
 body, html{
     height: 100%;
     margin: 0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     font-weight:900;
     line-height: 1.8em;
@@ -13,6 +14,10 @@ body, html{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 .first-image{
     background-image: url("Images/Image1.jpg");
@@ -32,6 +37,7 @@ body, html{
     background-color: #111;
     color: #fff;
     padding: 20px;
+    font-size: 27px;
 }
 
 .article{
@@ -90,7 +96,11 @@ p{
     
 }
 
-
+@media(max-width:760px){
+    .ptext .border{
+        font-size: 20px;
+    }
+}
 
 
 @media only screen and (max-width: 568px){
@@ -98,3 +108,4 @@ p{
         background-attachment:scroll; 
     }
 } 
+
